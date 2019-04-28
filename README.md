@@ -28,13 +28,21 @@ ________________________________________________________________________________
 |! EXPRESSION	         | The EXPRESSION is false.                                             |
 |-n STRING             | The length of STRING is greater than zero.                           |
 |-z STRING             | The lengh of STRING is zero (ie it is empty).                        |
-|STRING1 = STRING2     | STRING1 is equal to STRING2                                          |
-|STRING1 != STRING2    | STRING1 is not equal to STRING2                                      |
+|STRING1 =  STRING2    | STRING1 is equal to STRING2.                                         |
+|STRING1 != STRING2    | STRING1 is not equal to STRING2.                                     |
+|STRING1 <  STRING2    | STRING1 sorts before STRING2 lexicographically in the current locale.|
+|STRING1 >  STRING2    | STRING1 sorts after STRING2 lexicographically in the current locale. |
+| ...                  | ...                                                                  |
+|INTEGER1 -ne INTEGER2 | INTEGER1 is numerically NOT equal to INTEGER2                        |
+|INTEGER1 -ge INTEGER2 | INTEGER1 is numerically equal than or equal to INTEGER2              |
+|INTEGER1 -le INTEGER2 | INTEGER1 is numerically less than equal to INTEGER2                  |
 |INTEGER1 -eq INTEGER2 | INTEGER1 is numerically equal to INTEGER2                            |
 |INTEGER1 -gt INTEGER2 | INTEGER1 is numerically greater than INTEGER2                        |
 |INTEGER1 -lt INTEGER2 | INTEGER1 is numerically less than INTEGER2                           |
+| ...                  | ...                                                                  |
 |-d FILE               | FILE exists and is a directory.                                      |
 |-e FILE               | FILE exists.                                                         |
+|-a FILE               | FILE exists.                                                         |
 |-r FILE               | FILE exists and the read permission is granted.                      |
 |-s FILE               | FILE exists and it's size is greater than zero (ie. it is not empty).|
 |-w FILE               | FILE exists and the write permission is granted.                     |
