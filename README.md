@@ -40,13 +40,28 @@ ________________________________________________________________________________
 |INTEGER1 -gt INTEGER2 | INTEGER1 is numerically greater than INTEGER2                        |
 |INTEGER1 -lt INTEGER2 | INTEGER1 is numerically less than INTEGER2                           |
 | ...                  | ...                                                                  |
+|-a FILE               | FILE exists.                                                         |
+|-b FILE               | FILE exists and is a block-special file.                             |
+|-c FILE               | FILE exists and is a character-special file.                         |
 |-d FILE               | FILE exists and is a directory.                                      |
 |-e FILE               | FILE exists.                                                         |
-|-a FILE               | FILE exists.                                                         |
+|-f FILE               | FILE exists and is a regular file.                                   |
+|-g FILE               | FILE exists and its SGID bit is set.                                 |
+|-h FILE               | FILE exists and is a symbolic link.                                  |
+|-k FILE               | FILE exists and its sticky bit is set.                               |
+|-p FILE               | FILE exists and is a named pipe (FIFO).                              |
 |-r FILE               | FILE exists and the read permission is granted.                      |
 |-s FILE               | FILE exists and it's size is greater than zero (ie. it is not empty).|
+|-t FILE               | FILE descriptor FD is open and refers to a terminal.                 |
+|-u FILE               | FILE exists and its SUID (set user ID) bit is set.                   |
 |-w FILE               | FILE exists and the write permission is granted.                     |
 |-x FILE               | FILE exists and the execute permission is granted.                   |
+|-O FILE               | FILE exists and is owned by the effective user ID.                   |
+|-G FILE               | FILE exists and is owned by the effective group ID.                  |
+|-L FILE               | FILE exists and is a symbolic link.                                  |
+|-N FILE               | FILE exists and has been modified since it was last read.            |
+|-S FILE               | FILE exists and is a socket.                                         |
+
 
 #### [Table Source](https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php)
 _______________________________________________________________________________________________________
